@@ -2,10 +2,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
-    // директиву final и константы мы еще в рамках курса не проходили
-    // но не могу не воспользоваться советом куратора )
-    // вообще весь код можно было сделать гораздо проще, но хочется
-    // попробовать разные возможности языка
+    // Вынес что возможно в константы
     public static final int minSpeed = 0;
     public static final int maxSpeed = 250;
     public static final int racingTime = 24;
@@ -13,13 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // Создадим переменную для регистрации участников гонки
-        //Car[] listOfParticipants = new Car[3];
-
-        // Регистрация участников
-        // Можно сразу при регистрации участников определить победителя,
-        // как советует Artur, но тогда пропадает необходимость в классе Race
-        // который вроде как нужен по условиям задачи
+        // При регистрации участников сразу вычисдяем победителя гонок
         Car leader = null;
         int maxDistance = 0;
 
