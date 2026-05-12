@@ -38,7 +38,6 @@ public class Main {
                 }
             }
         }
-
         System.out.println("В гонке победил автомобиль " + leader.name);
         scanner.close();
     }
