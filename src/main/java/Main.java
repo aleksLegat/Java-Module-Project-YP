@@ -6,7 +6,7 @@ public class Main {
     // но не могу не воспользоваться советом куратора )
     // вообще весь код можно было сделать гораздо проще, но хочется
     // попробовать разные возможности языка
-    public static final int minSpeed = 1;
+    public static final int minSpeed = 0;
     public static final int maxSpeed = 250;
     public static final int racingTime = 24;
 
