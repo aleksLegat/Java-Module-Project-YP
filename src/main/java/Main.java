@@ -1,4 +1,3 @@
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
@@ -6,7 +5,6 @@ public class Main {
     public static final int minSpeed = 0;
     public static final int maxSpeed = 250;
     public static final int racingTime = 24;
-
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,7 +14,7 @@ public class Main {
 
         for (int i = 0; i < 3; i++) {
             int numberOfParticipant = i + 1;
-            System.out.println(String.format("Введите имя %d участника", numberOfParticipant));
+            System.out.println("Введите имя " + numberOfParticipant + " участника");
             String currentName = scanner.next();
             int currentSpeed = inputSpeed(scanner, numberOfParticipant);
 
@@ -41,10 +39,9 @@ public class Main {
     public static int inputSpeed(Scanner scanner, int numberOfParticipant) {
         int currentSpeed = -1;
         while (currentSpeed < minSpeed || currentSpeed > maxSpeed) {
-            System.out.println(String.format("Введите скорость автомобиля %d участника в диапазоне от %d до %d км/ч", numberOfParticipant, minSpeed, maxSpeed));
+            System.out.println("Введите скорость автомобиля " + numberOfParticipant + " участника в диапазоне от " + minSpeed + " до " + maxSpeed + " км/ч");
             currentSpeed = scanner.nextInt();
         }
         return currentSpeed;
     }
 }
-
