@@ -13,14 +13,13 @@ public class Main {
         int maxDistance = 0;
 
 
-
         for (int i = 0; i < 3; i++) {
             int numberOfParticipant = i + 1;
 
             System.out.println("Введите имя " + numberOfParticipant + " участника");
-            String currentName = "";
+            String currentName;
             while ((currentName = scanner.nextLine()).trim().isEmpty()) {
-               System.out.println("Вы ввели некорректное имя участника!");
+                System.out.println("Вы ввели некорректное имя участника!");
             }
             int currentSpeed = inputSpeed(scanner, numberOfParticipant);
             scanner.nextLine();
