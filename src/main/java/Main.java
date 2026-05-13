@@ -44,6 +44,7 @@ public class Main {
     // Вынес код ввода скорости в отдельную функцию
     public static int inputSpeed(Scanner scanner, int numberOfParticipant) {
         int currentSpeed = -1;
+
         System.out.println("Введите скорость автомобиля " + numberOfParticipant + " участника в диапазоне от " + minSpeed + " до " + maxSpeed + " км/ч");
         while (true) {
             if (!scanner.hasNextInt()) {
